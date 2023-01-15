@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 62.5%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+main {
+  width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #e43a15; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e65245,
+    #e43a15
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e65245,
+    #e43a15
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
-.App-link {
-  color: #61dafb;
+section {
+  background-color: #bad7e967;
+  padding: 4rem;
+  font-family: "Antic Slab", serif;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 0.5rem 1.5rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.holiday {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  margin-bottom: 1rem;
+}
+img {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+}
+h3 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.2rem;
+}
+p {
+  letter-spacing: 0.12rem;
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  font-family: "Antic Slab", serif;
+  padding: 1.25rem 2.5rem;
+  cursor: pointer;
+  color: #fff;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.12rem;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+  transition: 0.3s;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.45);
+}
+button:hover {
+  background-color: rgb(137, 1, 1);
 }
